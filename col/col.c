@@ -2,7 +2,7 @@
 #include <string.h>
 unsigned long hashcode = 0x21DD09EC;
 unsigned long check_password(const char* p){
-        int* ip = (int*)p;
+        int* ip = (int*)p; //can interpret characters as ints in an array
         int i;
         int res=0;
         for(i=0; i<5; i++){
@@ -12,6 +12,9 @@ unsigned long check_password(const char* p){
 }
 
 int main(int argc, char* argv[]){
+
+        scanf("%d", &argc);
+
         if(argc<2){
                 printf("usage : %s [passcode]\n", argv[0]);
                 return 0;
