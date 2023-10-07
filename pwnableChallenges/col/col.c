@@ -13,7 +13,6 @@ unsigned long check_password(const char* p){
 
 int main(int argc, char* argv[]){
 
-        scanf("%d", &argc);
 
         if(argc<2){
                 printf("usage : %s [passcode]\n", argv[0]);
